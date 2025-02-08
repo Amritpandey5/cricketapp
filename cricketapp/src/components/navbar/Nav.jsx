@@ -13,7 +13,7 @@ const Nav = () =>{
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Scores</a></li>
                     <li><a href="#">RoundSetter</a></li>
-                    <li><a href="#">Awards</a></li>
+                    <li><a href="#">Rewards</a></li>
                     <label for="check" className="close-menu" aria-label="Close Menu">
                     <i className="fas fa-times"></i>
                     </label>
