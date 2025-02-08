@@ -41,14 +41,14 @@ const Main = () => {
             </div>
             <div className="middle">
                 {/* <img src="" alt="flags" /> */}
-                <p>flag img here</p>
+                <p>flagimg here</p>
                 <h5>IND</h5>
                 <div className="time">
                     <div className="remaining-time">2h 51m</div>
                     <div className="actual-time">09:00 PM</div>
                 </div>
                 {/* <img src="" alt="" /> */}
-                <p>flags img here</p>
+                <p>flagsimghere</p>
                 <h5>ENG</h5>
             </div>
 
