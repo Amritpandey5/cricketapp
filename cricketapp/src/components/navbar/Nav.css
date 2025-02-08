@@ -1,105 +1,160 @@
-.nav-bar{
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  :root {
+    --color1: #210b87;
+    --color2: #9e0ece;
+    --textcolor: #fff;
+  }
+  
+  .nav-container {
+    width: 100%;
+  }
+  
+  .nav-bar {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    /* border: 1px solid #fff; */
     position: relative;
-    
-    background:linear-gradient(90deg ,var(--color1),var(--color2));
+    background: linear-gradient(90deg, var(--color1), var(--color2));
     padding: 12px 20px;
-
-}
-.logo{
+  }
+  
+  .logo {
     color: var(--textcolor);
     font-size: xx-large;
-}
-.logo img {width: 40px;}
-.menu {display: flex;}
-.menu li {padding-left: 30px;}
-.menu li a{
+  }
+  .logo img {
+    width: 40px;
+  }
+  
+  .menu {
+    display: flex;
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  .menu li {
+    padding-left: 30px;
+  }
+  
+  .menu li a {
     display: inline-block;
     text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 20px;
+    border: 2px solid var(--textcolor);
     color: var(--textcolor);
+    background-color: rgba(255, 255, 255, 0.196);
     text-align: center;
-    transition: 0.15s ease-in-out;
-    position: relative;
+    transition: transform 0.2s, background-color 0.15s ease-in-out;
     text-transform: uppercase;
-}
-.menu li a::after{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 2px;
-    background-color: var(--textcolor);
-    transition: 0.15s ease-in-out;
-}
-.menu li a:hover::after{ width: 100%;}
-.open-menu , .close-menu{
+  }
+  
+  .menu li a:active {
+    background-color: var(--color1);
+    transform: scale(1.03);
+  }
+  
+  .open-menu, .close-menu {
     position: absolute;
     color: var(--textcolor);
     cursor: pointer;
-    font-size: 1.5rem; 
-    display: none;  
-}
-.open-menu{
+    font-size: 1.5rem;
+    display: none;
+  }
+  
+  .open-menu {
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
-}
-.close-menu{
+  }
+  
+  .close-menu {
     top: 20px;
     right: 20px;
-}
-.cta-btn{
+  }
+  
+  .cta-btn {
     display: flex;
     column-gap: 5px;
-    div{
-        margin-right: 30px;
-        background-color:rgba(255, 255, 255, 0.199);
-        border-radius: 40px;
-        color: var(--textcolor);
-        padding: 5px 14px 5px 14px;
-        width:fit-content;
-        height: fit-content;
-        border: none;
-
+  }
+  .login:nth-of-type(1){
+    background-color: rgb(255, 105, 6);
+    color: #0a022e;
+    font-weight: 700;
+    border: none;
+    filter: drop-shadow(2px 2px 5px rgb(0, 0, 0) );
+  }
+  
+  .login:nth-of-type(2) {
+    background-color: #21f312;
+    border: none;
+    color: #0a022e;
+    font-weight:700;
+    filter: drop-shadow(2px 2px 10px rgb(0, 6, 8));
+  }
+  .login {
+    margin-right: 20px;
+    border: 2px solid var(--textcolor);
+    background-color: rgba(255, 255, 255, 0.199);
+    border-radius: 40px;
+    color: var(--textcolor);
+    padding: 10px 14px;
+    text-align: center;
+    user-select: none;
+    width: 100px;
+    transition: box-shadow 0.3s ease, transform 0.2s;
+  }
+  
+  .login:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .login:active {
+    transform: scale(1.03);
+    background-color: rgb(22, 238, 22);
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  @media (max-width: 610px) {
+    .cta-btn {
+      display: none;
     }
-
-}
-
-#check{display: none;}
-
-@media ( max-width: 610px) {
-    .cta-btn{
-        display: none;
+  
+    .menu {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      z-index: 100;
+      background-color: var(--color2);
+      transition: all 0.2s ease-in-out;
     }
-
-    .menu{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 50%;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: -100%;
-        z-index: 100;
-        background-color: var(--color2);
-        transition: all 0.2s ease-in-out;
-
-       
-
-
-       
+  
+    .menu li {
+      margin-top: 40px;
     }
-    .menu li a {pad: 10px;} 
-    .menu li {margin-top: 40px;}
-
-    .open-menu , .close-menu {display: block;}
-    #check:checked ~ .menu {right: 0;}
-
-
-}
+  
+    .open-menu,
+    .close-menu {
+      display: block;
+    }
+  
+    #check:checked ~ .menu {
+      right: 0;
+    }
+  }
+  
