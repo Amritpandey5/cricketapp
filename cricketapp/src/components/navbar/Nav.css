@@ -26,14 +26,34 @@
     background: linear-gradient(90deg, var(--color1), var(--color2));
     padding: 12px 20px;
   }
+  .user-logo{
+    width: 50px;
+    height: 50px;
+    background: #7d7c7c;
+    text-align: center;
+    font-size: 35px;
+    user-select: none;
+    color: #fff;
+    border: 3px solid rgb(182, 183, 182);
+    border-radius: 50%;
+    margin: 15px 8px 8px 8px;
+  }
   
+  .user-logo:active{
+    transform: scale(1.009);
+  }
+
   .logo {
     color: var(--textcolor);
-    font-size: xx-large;
+    margin-left: -90px;
+    font-size: 50px;
+    user-select: none;
+    font-weight: 800;
+    color: #f3c407;
   }
-  .logo img {
-    width: 40px;
-  }
+  /* .logo img {
+    width: 4px;
+  } */
   
   .menu {
     display: flex;

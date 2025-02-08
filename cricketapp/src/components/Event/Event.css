@@ -18,7 +18,8 @@
   
   .event-container {
     width: 100%;
-    padding: 30px;
+    height: 130px;
+    padding: 27px;
   }
   
   .cards {
@@ -45,7 +46,7 @@
     border-radius: 10px;
   }
   
-  .card {
+  .event-card {
     flex: 0 0 auto;
     width: 200px;
     text-align: center;
@@ -59,7 +60,8 @@
     transition: transform 0.3s;
   }
   
-  .card:hover {
+  .event-card:hover {
     transform: scale(1.05);
+
   }
   

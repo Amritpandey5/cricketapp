@@ -7,11 +7,12 @@ const Nav = () =>{
        <header className="nav-container">
             <nav>
                 <ul className="nav-bar">
-                <li className="logo">🏏Cricket</li>
+                <li className="user-logo">A</li>
+                <li className="logo">🏏CricketBet</li>
                 <input type="checkbox" id="check" />
                 <span className="menu">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Scores</a></li>
+                    <li><a href="#">Series</a></li>
                     <li><a href="#">RoundSetter</a></li>
                     <li><a href="#">Rewards</a></li>
                     <label for="check" className="close-menu" aria-label="Close Menu">
