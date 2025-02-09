@@ -1,5 +1,6 @@
 import React from "react";
 import './Main.css';
+import flagimg from '../../Image/flag1.jpg';
 
 const Main = () => {
     return(
@@ -40,23 +41,134 @@ const Main = () => {
                <p className="linup-status">Lineup <img src="" alt="" /></p>
             </div>
             <div className="middle">
-                {/* <img src="" alt="flags" /> */}
-                <p>flagimg here</p>
-                <h5>IND</h5>
+                <p className="country-flag-code">
+                  <img className="country-flag" src={"flagimg"} alt="" /> 
+                  <h5 className="country-code">IND</h5>
+                  </p>
                 <div className="time">
                     <div className="remaining-time">2h 51m</div>
                     <div className="actual-time">09:00 PM</div>
                 </div>
-                {/* <img src="" alt="" /> */}
-                <p>flagsimghere</p>
-                <h5>ENG</h5>
+                <p className="country-flag-code">
+                  <h5 className="country-code">ENG</h5>
+                  <img className="country-flag" src={"flagimg"} alt="" /> 
+                  </p>
             </div>
 
             <div className="lower">
-                <p></p>
-                <p></p>
+                <p className="price-pool">Mega Rs 27 Crores +</p>
+                <p className="bell-icon">bell icon</p>
             </div>
         </div>
+
+        <div className="upcoming-matches">
+            <div className="upper">
+                <p className="league-name">Indian premier league</p>
+               <p className="linup-status">Lineup <img src="" alt="" /></p>
+            </div>
+            <div className="middle">
+                <p className="country-flag-code">
+                  <img className="country-flag" src={"flagimg"} alt="" /> 
+                  <h5 className="country-code">IND</h5>
+                  </p>
+                <div className="time">
+                    <div className="remaining-time">2h 51m</div>
+                    <div className="actual-time">09:00 PM</div>
+                </div>
+                <p className="country-flag-code">
+                  <h5 className="country-code">ENG</h5>
+                  <img className="country-flag" src={"flagimg"} alt="" /> 
+                  </p>
+            </div>
+
+            <div className="lower">
+                <p className="price-pool">Mega Rs 27 Crores +</p>
+                <p className="bell-icon">bell icon</p>
+            </div>
+        </div>
+
+        <div className="upcoming-matches">
+            <div className="upper">
+                <p className="league-name">Indian premier league</p>
+               <p className="linup-status">Lineup <img src="" alt="" /></p>
+            </div>
+            <div className="middle">
+                <p className="country-flag-code">
+                  <img className="country-flag" src={"flagimg"} alt="" /> 
+                  <h5 className="country-code">IND</h5>
+                  </p>
+                <div className="time">
+                    <div className="remaining-time">2h 51m</div>
+                    <div className="actual-time">09:00 PM</div>
+                </div>
+                <p className="country-flag-code">
+                  <h5 className="country-code">ENG</h5>
+                  <img className="country-flag" src={"flagimg"} alt="" /> 
+                  </p>
+            </div>
+
+            <div className="lower">
+                <p className="price-pool">Mega Rs 27 Crores +</p>
+                <p className="bell-icon">bell icon</p>
+            </div>
+        </div>
+        
+        <div className="upcoming-matches">
+            <div className="upper">
+                <p className="league-name">Indian premier league</p>
+               <p className="linup-status">Lineup <img src="" alt="" /></p>
+            </div>
+            <div className="middle">
+                <p className="country-flag-code">
+                  <img className="country-flag" src={"flagimg"} alt="" /> 
+                  <h5 className="country-code">IND</h5>
+                  </p>
+                <div className="time">
+                    <div className="remaining-time">2h 51m</div>
+                    <div className="actual-time">09:00 PM</div>
+                </div>
+                <p className="country-flag-code">
+                  <h5 className="country-code">ENG</h5>
+                  <img className="country-flag" src={"flagimg"} alt="" /> 
+                  </p>
+            </div>
+
+            <div className="lower">
+                <p className="price-pool">Mega Rs 27 Crores +</p>
+                <p className="bell-icon">bell icon</p>
+            </div>
+        </div>
+        
+        <div className="upcoming-matches">
+            <div className="upper">
+                <p className="league-name">Indian premier league</p>
+               <p className="linup-status">Lineup <img src="" alt="" /></p>
+            </div>
+            <div className="middle">
+                <p className="country-flag-code">
+                  <img className="country-flag" src={"flagimg"} alt="" /> 
+                  <h5 className="country-code">IND</h5>
+                  </p>
+                <div className="time">
+                    <div className="remaining-time">2h 51m</div>
+                    <div className="actual-time">09:00 PM</div>
+                </div>
+                <p className="country-flag-code">
+                  <h5 className="country-code">ENG</h5>
+                  <img className="country-flag" src={"flagimg"} alt="" /> 
+                  </p>
+            </div>
+
+            <div className="lower">
+                <p className="price-pool">Mega Rs 27 Crores +</p>
+                <p className="bell-icon">bell icon</p>
+            </div>
+        </div>
+
+
+
+
+        
       </section>
 
       {/* Call to Action */}

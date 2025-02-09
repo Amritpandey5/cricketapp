@@ -1,5 +1,6 @@
 import React from "react";
 import './Event.css';
+import Eventimg from '../../Image/Event1.jpg'
 
 const Event = () =>{
     return(
