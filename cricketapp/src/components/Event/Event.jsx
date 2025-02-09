@@ -27,16 +27,16 @@ const Event = () =>{
                 <div className="event-card">
                 <div className="serie-name">Pakistan Super League</div>
                 </div>
-                <div className="event-card">
+                {/* <div className="event-card">
                 <div className="serie-name">Pakistan Super League</div>
-                </div>
-                <div className="event-card">
+                </div> */}
+                {/* <div className="event-card">
                 <div className="serie-name">Pakistan Super League</div>
                 </div>
 
                 <div className="event-card">
                 <div className="serie-name">The Hundred</div>
-                </div>
+                </div> */}
             </div>
             </div>
 

@@ -26,6 +26,7 @@
   
   .cards {
     display: flex;
+    justify-content: center;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 30px;
@@ -35,18 +36,18 @@
     scrollbar-width: none;
     scrollbar-color: var(--color1) transparent;
 }
-.cards:hover{
+/* .cards:hover{
     scrollbar-width:thin;
-  }
+  } */
   
-  .cards::-webkit-scrollbar {
+  /* .cards::-webkit-scrollbar {
     height: 8px;
   }
   
   .cards::-webkit-scrollbar-thumb {
     background: var(--textcolor);
     border-radius: 10px;
-  }
+  } */
   
   .event-card {
     flex: 0 0 auto;
