@@ -2,16 +2,11 @@ import React from "react";
 import './Main.css';
 import flagimg from '../../Image/flag1.jpg';
 import flagimg2 from '../../Image/flag2.jpg';
-
+import image1 from '../../Image/Event1.jpg';
+import { NavLink } from "react-router-dom";
 const Main = () => {
     return(
         <main className="main-container">
-      {/* Hero Section */}
-      {/* <section className="hero-section">
-        <h1>Welcome to Cricket World!</h1>
-        <p>Get the latest updates, scores, and tournaments from around the globe.</p>
-        <button className="explore-button">Explore Now</button>
-      </section> */}
 
       {/* Info cards Section */}
       <section className="cards-section">
@@ -35,140 +30,178 @@ const Main = () => {
         </div>
       </section>
 
-      <section className="upcoming-matches-container">
         <div className="upcoming-matches-header">
           <h2 className="upcoming-matches-heading">Upcomming Matches</h2>
           <p>100% off</p>
         </div>
-        <div className="upcoming-matches">
-            <div className="upper">
-                <p className="league-name">Indian premier league</p>
-               <p className="linup-status">Lineup <img src="" alt="" /></p>
-            </div>
-            <div className="middle">
-                <p className="country-flag-code">
-                  <img className="country-flag" src={flagimg} alt="" /> 
-                  <h5 className="country-code">IND</h5>
-                  </p>
-                <div className="time">
-                    <div className="remaining-time">2h 51m</div>
-                    <div className="actual-time">09:00 PM</div>
+      <section className="upcoming-matches-container">
+        <div className="upcoming-matches-wraper">
+            <div className="upcoming-matches">
+                <div className="upper">
+                    <p className="league-name">Indian premier league</p>
+                  <p className="linup-status">Lineup <img src="" alt="" /></p>
                 </div>
-                <p className="country-flag-code">
-                  <h5 className="country-code">ENG</h5>
-                  <img className="country-flag" src={flagimg2} alt="" /> 
-                  </p>
-            </div>
-
-            <div className="lower">
-                <p className="price-pool">Mega Rs 27 Crores +</p>
-                <p className="bell-icon">bell icon</p>
-            </div>
-        </div>
-
-        <div className="upcoming-matches">
-            <div className="upper">
-                <p className="league-name">Indian premier league</p>
-               <p className="linup-status">Lineup <img src="" alt="" /></p>
-            </div>
-            <div className="middle">
-                <p className="country-flag-code">
-                  <img className="country-flag" src={flagimg} alt="" /> 
-                  <h5 className="country-code">IND</h5>
-                  </p>
-                <div className="time">
-                    <div className="remaining-time">2h 51m</div>
-                    <div className="actual-time">09:00 PM</div>
+                <div className="middle">
+                    <p className="country-flag-code">
+                      <img className="country-flag" src={flagimg} alt="" /> 
+                      <h5 className="country-code">IND</h5>
+                      </p>
+                    <div className="time">
+                        <div className="remaining-time">2h 51m</div>
+                        <div className="actual-time">09:00 PM</div>
+                    </div>
+                    <p className="country-flag-code">
+                      <h5 className="country-code">ENG</h5>
+                      <img className="country-flag" src={flagimg2} alt="" /> 
+                      </p>
                 </div>
-                <p className="country-flag-code">
-                  <h5 className="country-code">ENG</h5>
-                  <img className="country-flag" src={flagimg2} alt="" /> 
-                  </p>
-            </div>
 
-            <div className="lower">
-                <p className="price-pool">Mega Rs 27 Crores +</p>
-                <p className="bell-icon">bell icon</p>
-            </div>
-        </div>
-
-        <div className="upcoming-matches">
-            <div className="upper">
-                <p className="league-name">Indian premier league</p>
-               <p className="linup-status">Lineup <img src="" alt="" /></p>
-            </div>
-            <div className="middle">
-                <p className="country-flag-code">
-                  <img className="country-flag" src={flagimg} alt="" /> 
-                  <h5 className="country-code">IND</h5>
-                  </p>
-                <div className="time">
-                    <div className="remaining-time">2h 51m</div>
-                    <div className="actual-time">09:00 PM</div>
+                <div className="lower">
+                    <p className="price-pool">Mega Rs 27 Crores +</p>
+                    <p className="bell-icon">bell icon</p>
                 </div>
-                <p className="country-flag-code">
-                  <h5 className="country-code">ENG</h5>
-                  <img className="country-flag" src={flagimg2} alt="" /> 
-                  </p>
+              <NavLink to = "/contests"> <button className="bet-btn">Bet Now</button></NavLink>
             </div>
 
-            <div className="lower">
-                <p className="price-pool">Mega Rs 27 Crores +</p>
-                <p className="bell-icon">bell icon</p>
-            </div>
-        </div>
-        
-        <div className="upcoming-matches">
-            <div className="upper">
-                <p className="league-name">Indian premier league</p>
-               <p className="linup-status">Lineup <img src="" alt="" /></p>
-            </div>
-            <div className="middle">
-                <p className="country-flag-code">
-                  <img className="country-flag" src={flagimg} alt="" /> 
-                  <h5 className="country-code">IND</h5>
-                  </p>
-                <div className="time">
-                    <div className="remaining-time">2h 51m</div>
-                    <div className="actual-time">09:00 PM</div>
+            <div className="upcoming-matches">
+                <div className="upper">
+                    <p className="league-name">Indian premier league</p>
+                  <p className="linup-status">Lineup <img src="" alt="" /></p>
                 </div>
-                <p className="country-flag-code">
-                  <h5 className="country-code">ENG</h5>
-                  <img className="country-flag" src={flagimg2} alt="" /> 
-                  </p>
-            </div>
-
-            <div className="lower">
-                <p className="price-pool">Mega Rs 27 Crores +</p>
-                <p className="bell-icon">bell icon</p>
-            </div>
-        </div>
-        
-        <div className="upcoming-matches">
-            <div className="upper">
-                <p className="league-name">Indian premier league</p>
-               <p className="linup-status">Lineup <img src="" alt="" /></p>
-            </div>
-            <div className="middle">
-                <p className="country-flag-code">
-                  <img className="country-flag" src={flagimg} alt="" /> 
-                  <h5 className="country-code">IND</h5>
-                  </p>
-                <div className="time">
-                    <div className="remaining-time">2h 51m</div>
-                    <div className="actual-time">09:00 PM</div>
+                <div className="middle">
+                    <p className="country-flag-code">
+                      <img className="country-flag" src={flagimg} alt="" /> 
+                      <h5 className="country-code">IND</h5>
+                      </p>
+                    <div className="time">
+                        <div className="remaining-time">2h 51m</div>
+                        <div className="actual-time">09:00 PM</div>
+                    </div>
+                    <p className="country-flag-code">
+                      <h5 className="country-code">ENG</h5>
+                      <img className="country-flag" src={flagimg2} alt="" /> 
+                      </p>
                 </div>
-                <p className="country-flag-code">
-                  <h5 className="country-code">ENG</h5>
-                  <img className="country-flag" src={flagimg2} alt="" /> 
-                  </p>
+
+                <div className="lower">
+                    <p className="price-pool">Mega Rs 27 Crores +</p>
+                    <p className="bell-icon">bell icon</p>
+                </div>
+                <NavLink><button className="bet-btn">Bet Now</button></NavLink>
             </div>
 
-            <div className="lower">
-                <p className="price-pool">Mega Rs 27 Crores +</p>
-                <p className="bell-icon">bell icon</p>
+            <div className="upcoming-matches">
+                <div className="upper">
+                    <p className="league-name">Indian premier league</p>
+                  <p className="linup-status">Lineup <img src="" alt="" /></p>
+                </div>
+                <div className="middle">
+                    <p className="country-flag-code">
+                      <img className="country-flag" src={flagimg} alt="" /> 
+                      <h5 className="country-code">IND</h5>
+                      </p>
+                    <div className="time">
+                        <div className="remaining-time">2h 51m</div>
+                        <div className="actual-time">09:00 PM</div>
+                    </div>
+                    <p className="country-flag-code">
+                      <h5 className="country-code">ENG</h5>
+                      <img className="country-flag" src={flagimg2} alt="" /> 
+                      </p>
+                </div>
+
+                <div className="lower">
+                    <p className="price-pool">Mega Rs 27 Crores +</p>
+                    <p className="bell-icon">bell icon</p>
+                </div>
+                <button className="bet-btn">Bet Now</button>
             </div>
+            
+            <div className="upcoming-matches">
+                <div className="upper">
+                    <p className="league-name">Indian premier league</p>
+                  <p className="linup-status">Lineup <img src="" alt="" /></p>
+                </div>
+                <div className="middle">
+                    <p className="country-flag-code">
+                      <img className="country-flag" src={flagimg} alt="" /> 
+                      <h5 className="country-code">IND</h5>
+                      </p>
+                    <div className="time">
+                        <div className="remaining-time">2h 51m</div>
+                        <div className="actual-time">09:00 PM</div>
+                    </div>
+                    <p className="country-flag-code">
+                      <h5 className="country-code">ENG</h5>
+                      <img className="country-flag" src={flagimg2} alt="" /> 
+                      </p>
+                </div>
+
+                <div className="lower">
+                    <p className="price-pool">Mega Rs 27 Crores +</p>
+                    <p className="bell-icon">bell icon</p>
+                </div>
+                <button className="bet-btn">Bet Now</button>
+            </div>
+            
+            <div className="upcoming-matches">
+                <div className="upper">
+                    <p className="league-name">Indian premier league</p>
+                  <p className="linup-status">Lineup <img src="" alt="" /></p>
+                </div>
+                <div className="middle">
+                    <p className="country-flag-code">
+                      <img className="country-flag" src={flagimg} alt="" /> 
+                      <h5 className="country-code">IND</h5>
+                      </p>
+                    <div className="time">
+                        <div className="remaining-time">2h 51m</div>
+                        <div className="actual-time">09:00 PM</div>
+                    </div>
+                    <p className="country-flag-code">
+                      <h5 className="country-code">ENG</h5>
+                      <img className="country-flag" src={flagimg2} alt="" /> 
+                      </p>
+                </div>
+
+                <div className="lower">
+                    <p className="price-pool">Mega Rs 27 Crores +</p>
+                    <p className="bell-icon">bell icon</p>
+                </div>
+                <button className="bet-btn">Bet Now</button>
+            </div>
+            
+            <div className="upcoming-matches">
+                <div className="upper">
+                    <p className="league-name">Indian premier league</p>
+                  <p className="linup-status">Lineup <img src="" alt="" /></p>
+                </div>
+                <div className="middle">
+                    <p className="country-flag-code">
+                      <img className="country-flag" src={flagimg} alt="" /> 
+                      <h5 className="country-code">IND</h5>
+                      </p>
+                    <div className="time">
+                        <div className="remaining-time">2h 51m</div>
+                        <div className="actual-time">09:00 PM</div>
+                    </div>
+                    <p className="country-flag-code">
+                      <h5 className="country-code">ENG</h5>
+                      <img className="country-flag" src={flagimg2} alt="" /> 
+                      </p>
+                </div>
+
+                <div className="lower">
+                    <p className="price-pool">Mega Rs 27 Crores +</p>
+                    <p className="bell-icon">bell icon</p>
+                </div>
+                <button className="bet-btn">Bet Now</button>
+            </div>
+            
         </div>
+        {/* <div className="img-container">
+          
+        </div> */}
 
 
 
